@@ -1,0 +1,439 @@
+{
+  "Power": {
+    "ON": {
+      "Info": "Starts the projector. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "PON",
+      "Command_old": "PON"
+    },
+    "OFF": {
+      "Info": "Shuts the projector down. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "POF",
+      "Command_old": "POF"
+    }
+  },
+  "Input": {
+    "VGA 1": {
+      "Info": " VGA/RGB 1. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "IIS:RG1",
+      "Command_old": "IIS:RG1"
+    },
+    "VGA 2": {
+      "Info": " VGA/RGB 2. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "IIS:RG2",
+      "Command_old": "IIS:RG2"
+    },
+    "Video": {
+      "Info": " Video. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "IIS:VID",
+      "Command_old": "IIS:VID"
+    },
+    "S-Video": {
+      "Info": " S-Video. (RZ21K, D12000, D6000, D5700, D5500, D3500)",
+      "Command_new": "IIS:SVD",
+      "Command_old": "IIS:SVD"
+    },
+    "DVI": {
+      "Info": " DVI. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, D5700, D5500, D3500)",
+      "Command_new": "IIS:DVI",
+      "Command_old": "IIS:DVI"
+    },
+    "HDMI 1": {
+      "Info": " HDMI 1. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "IIS:HD1",
+      "Command_old": "IIS:HD1"
+    },
+    "HDMI 2": {
+      "Info": " HDMI 2. (FRZ55)",
+      "Command_new": "IIS:HD2",
+      "Command_old": "IIS:HD2"
+    },
+    "SDI 1": {
+      "Info": " SDI 1. (RZ21K, DZ21K, DZ16K, DZ780, D6000)",
+      "Command_new": "IIS:SD1",
+      "Command_old": "IIS:SD1"
+    },
+    "SDI 2": {
+      "Info": " SDI 2. (RZ21K, DZ21K, DZ16K)",
+      "Command_new": "IIS:SD2",
+      "Command_old": "IIS:SD2"
+    },
+    "AUX": {
+      "Info": " AUX card. (D12000)",
+      "Command_new": "IIS:AUX",
+      "Command_old": "IIS:AUX"
+    }
+  },
+  "Shutter": {
+    "CLOSE": {
+      "Info": "Closes mechanical shutter. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OSH:1",
+      "Command_old": "OSH:1"
+    },
+    "OPEN": {
+      "Info": "Opens mechanical shutter. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OSH:0",
+      "Command_old": "OSH:0"
+    },
+    "Fade-In 0s": {
+      "Info": "Shutter Fade-In OFF. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS1=0.0",
+      "Command_old": "VXX:SEFS1=0.0"
+    },
+    "Fade-In 0.5s": {
+      "Info": "Shutter Fade-In 0.5s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS1=0.5",
+      "Command_old": "VXX:SEFS1=0.5"
+    },
+    "Fade-In 1.0s": {
+      "Info": "Shutter Fade-In 1.0s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS1=1.0",
+      "Command_old": "VXX:SEFS1=1.0"
+    },
+    "Fade-In 5.0s": {
+      "Info": "Shutter Fade-In 5.0s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS1=5.0",
+      "Command_old": "VXX:SEFS1=5.0"
+    },
+    "Fade-In 10s": {
+      "Info": "Shutter Fade-In 10s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS1=10.0",
+      "Command_old": "VXX:SEFS1=10.0"
+    },
+    "Fade-Out 0s": {
+      "Info": "Shutter Fade-Out OFF. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS2=0.0",
+      "Command_old": "VXX:SEFS2=0.0"
+    },
+    "Fade-Out 0.5s": {
+      "Info": "Shutter Fade-Out 0.5s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS2=0.5",
+      "Command_old": "VXX:SEFS2=0.5"
+    },
+    "Fade-Out 1.0s": {
+      "Info": "Shutter Fade-Out 1.0s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS2=1.0",
+      "Command_old": "VXX:SEFS2=1.0"
+    },
+    "Fade-Out 5.0s": {
+      "Info": "Shutter Fade-Out 5.0s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS2=5.0",
+      "Command_old": "VXX:SEFS2=5.0"
+    },
+    "Fade-Out 10s": {
+      "Info": "Shutter Fade-Out 10s. (RZ21K, DZ21K, DZ16K, DZ780, FRZ55)",
+      "Command_new": "VXX:SEFS2=10.0",
+      "Command_old": "VXX:SEFS2=10.0"
+    }
+  },
+  "Freeze": {
+    "ON": {
+      "Info": "Freeze the image. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OFZ:1",
+      "Command_old": "OFZ:1"
+    },
+    "OFF": {
+      "Info": "Un-Freeze the image. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OFZ:0",
+      "Command_old": "OFZ:0"
+    }
+  },
+  "Test Pattern": {
+    "OFF": {
+      "Info": "Disable Test pattern. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OTS:00",
+      "Command_old": "OTS:00"
+    },
+    "Window": {
+      "Info": "White Test pattern. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OTS:06",
+      "Command_old": "OTS:06"
+    },
+    "Focus 1": {
+      "Info": "Focus Test pattern 1. (RZ21K, DZ21K, DZ16K, D12000, D6000, D5700, D5500, D3500)",
+      "Command_new": "OTS:07",
+      "Command_old": "OTS:07"
+    },
+    "Focus 2": {
+      "Info": "Focus Test pattern 2. (DZ780, FRZ55)",
+      "Command_new": "OTS:11",
+      "Command_old": "OTS:11"
+    }
+  },
+  "OSD": {
+    "ON": {
+      "Info": "Enable OSD. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OOS:1",
+      "Command_old": "OOS:1"
+    },
+    "OFF": {
+      "Info": "Disable OSD. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700, D5500, D3500)",
+      "Command_new": "OOS:0",
+      "Command_old": "OOS:0"
+    }
+  },
+  "Blanking": {
+    "Left OFF": {
+      "Info": "Disable Blanking - left side. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700)",
+      "Command_new": "DBL:000",
+      "Command_old": "DBL:000"
+    },
+    "Upper OFF": {
+      "Info": "Disable Blanking - upper side. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700)",
+      "Command_new": "DBU:000",
+      "Command_old": "DBU:000"
+    },
+    "Right OFF": {
+      "Info": "Disable Blanking - right side. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700)",
+      "Command_new": "DBR:000",
+      "Command_old": "DBR:000"
+    },
+    "Bottom OFF": {
+      "Info": "Disable Blanking - bottom side. (RZ21K, DZ21K, DZ16K, D12000, DZ780, D6000, FRZ55, D5700)",
+      "Command_new": "DBB:000",
+      "Command_old": "DBB:000"
+    }
+  },
+  "Geometry": {
+    "OFF 1": {
+      "Info": "Disable Geometry corrections. (RZ21K, DZ21K, DZ16K, D12000, DZ780, FRZ55)",
+      "Command_new": "VXX:GMMI0=+00000",
+      "Command_old": "OKS:127"
+    }
+  },
+  "Lens": {
+    "Home Position H+V": {
+      "Info": "Shifts the lens to its home position (Hor+Ver). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI1=+00001",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x00 0x80 0x01 0x0D"
+    },
+    "Calibrate": {
+      "Info": "Calibrates lens for maximum capabilities. (RZ21K, DZ21K, DZ16K)",
+      "Command_new": "VXX:LNSI0=+00001",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x01 0x80 0x01 0x0D"
+    },
+    "Shift L++": {
+      "Info": "Shifts the image left (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI2=+00201",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x00 0x02 0x01 0x0D"
+    },
+    "Shift L+": {
+      "Info": "Shifts the image left (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI2=+00101",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x00 0x01 0x01 0x0D"
+    },
+    "Shift L": {
+      "Info": "Shifts the image left (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI2=+00001",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x00 0x00 0x01 0x0D"
+    },
+    "Shift U++": {
+      "Info": "Shifts the image up (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI3=+00200",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x01 0x02 0x00 0x0D"
+    },
+    "Shift U+": {
+      "Info": "Shifts the image up (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI3=+00100",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x01 0x01 0x00 0x0D"
+    },
+    "Shift U": {
+      "Info": "Shifts the image up (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI3=+00000",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x01 0x00 0x00 0x0D"
+    },
+    "Shift R++": {
+      "Info": "Shifts the image right (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI2=+00200",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x00 0x02 0x00 0x0D"
+    },
+    "Shift R+": {
+      "Info": "Shifts the image right (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI2=+00100",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x00 0x01 0x00 0x0D"
+    },
+    "Shift R": {
+      "Info": "Shifts the image right (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI2=+00000",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x00 0x00 0x00 0x0D"
+    },
+    "Shift D++": {
+      "Info": "Shifts the image down (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI3=+00201",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x01 0x02 0x01 0x0D"
+    },
+    "Shift D+": {
+      "Info": "Shifts the image down (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI3=+00101",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x01 0x01 0x01 0x0D"
+    },
+    "Shift D": {
+      "Info": "Shifts the image down (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI3=+00001",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x01 0x00 0x01 0x0D"
+    },
+    "Zoom W++": {
+      "Info": "Zooms wider (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI5=+00200",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x0D 0x02 0x00 0x0D"
+    },
+    "Zoom W+": {
+      "Info": "Zooms wider (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI5=+00100",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x0D 0x01 0x00 0x0D"
+    },
+    "Zoom W": {
+      "Info": "Zooms wider (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI5=+00000",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x0D 0x00 0x00 0x0D"
+    },
+    "Zoom T++": {
+      "Info": "Zooms narrower (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI5=+00201",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x0D 0x02 0x01 0x0D"
+    },
+    "Zoom T+": {
+      "Info": "Zooms narrower (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI5=+00101",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x0D 0x01 0x01 0x0D"
+    },
+    "Zoom T": {
+      "Info": "Zooms narrower (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI5=+00001",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x0D 0x00 0x01 0x0D"
+    },
+    "Focus C++": {
+      "Info": "Focuses closer (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI4=+00201",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x02 0x02 0x00 0x0D"
+    },
+    "Focus C+": {
+      "Info": "Focuses closer (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI4=+00101",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x02 0x01 0x00 0x0D"
+    },
+    "Focus C": {
+      "Info": "Focuses closer (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI4=+00001",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x02 0x00 0x00 0x0D"
+    },
+    "Focus D++": {
+      "Info": "Focuses further (fast). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI4=+00200",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x02 0x02 0x01 0x0D"
+    },
+    "Focus D+": {
+      "Info": "Focuses further (medium). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI4=+00100",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x02 0x01 0x01 0x0D"
+    },
+    "Focus D": {
+      "Info": "Focuses further (slow). (RZ21K, DZ21K, DZ16K, FRZ55)",
+      "Command_new": "VXX:LNSI4=+00000",
+      "Command_old": "0x02 0x00 0xB1 0x7C 0x02 0x00 0x01 0x0D"
+    }
+  },
+  "Lens Memory": {
+    "Load Memory 1": {
+      "Info": "Loads lens memory 1. (RZ21K, DZ21K, DZ16K)",
+      "Command_new": "VXX:LNMI1=+00000",
+      "Command_old": "VXX:LNMI1=+00000"
+    },
+    "Load Memory 2": {
+      "Info": "Loads lens memory 2. (RZ21K, DZ21K, DZ16K)",
+      "Command_new": "VXX:LNMI1=+00001",
+      "Command_old": "VXX:LNMI1=+00001"
+    },
+    "Load Memory 3": {
+      "Info": "Loads lens memory 3. (RZ21K, DZ21K, DZ16K)",
+      "Command_new": "VXX:LNMI1=+00002",
+      "Command_old": "VXX:LNMI1=+00002"
+    },
+    "Load Memory 4": {
+      "Info": "Loads lens memory 4. (RZ21K)",
+      "Command_new": "VXX:LNMI1=+00003",
+      "Command_old": "VXX:LNMI1=+00003"
+    },
+    "Load Memory 5": {
+      "Info": "Loads lens memory 5. (RZ21K)",
+      "Command_new": "VXX:LNMI1=+00004",
+      "Command_old": "VXX:LNMI1=+00004"
+    },
+    "Load Memory 6": {
+      "Info": "Loads lens memory 6. (RZ21K)",
+      "Command_new": "VXX:LNMI1=+00005",
+      "Command_old": "VXX:LNMI1=+00005"
+    },
+    "Load Memory 7": {
+      "Info": "Loads lens memory 7. (RZ21K)",
+      "Command_new": "VXX:LNMI1=+00006",
+      "Command_old": "VXX:LNMI1=+00006"
+    },
+    "Load Memory 8": {
+      "Info": "Loads lens memory 8. (RZ21K)",
+      "Command_new": "VXX:LNMI1=+00007",
+      "Command_old": "VXX:LNMI1=+00007"
+    },
+    "Load Memory 9": {
+      "Info": "Loads lens memory 9. (RZ21K)",
+      "Command_new": "VXX:LNMI1=+00008",
+      "Command_old": "VXX:LNMI1=+00008"
+    },
+    "Load Memory 10": {
+      "Info": "Loads lens memory 10. (RZ21K)",
+      "Command_new": "VXX:LNMI1=+00009",
+      "Command_old": "VXX:LNMI1=+00009"
+    }
+  },
+  "Light Output": {
+    "100": {
+      "Info": "Set laser light output to 100%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+01000",
+      "Command_old": "VXX:LOPI2=+01000"
+    },
+    "90": {
+      "Info": "Set laser light output to 90%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00900",
+      "Command_old": "VXX:LOPI2=+00900"
+    },
+    "80": {
+      "Info": "Set laser light output to 80%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00800",
+      "Command_old": "VXX:LOPI2=+00800"
+    },
+    "70": {
+      "Info": "Set laser light output to 70%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00700",
+      "Command_old": "VXX:LOPI2=+00700"
+    },
+    "60": {
+      "Info": "Set laser light output to 60%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00600",
+      "Command_old": "VXX:LOPI2=+00600"
+    },
+    "50": {
+      "Info": "Set laser light output to 50%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00500",
+      "Command_old": "VXX:LOPI2=+00500"
+    },
+    "40": {
+      "Info": "Set laser light output to 40%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00400",
+      "Command_old": "VXX:LOPI2=+00400"
+    },
+    "30": {
+      "Info": "Set laser light output to 30%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00300",
+      "Command_old": "VXX:LOPI2=+00300"
+    },
+    "20": {
+      "Info": "Set laser light output to 20%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00200",
+      "Command_old": "VXX:LOPI2=+00200"
+    },
+    "10": {
+      "Info": "Set laser light output to 10%. (RZ21K, FRZ55)",
+      "Command_new": "VXX:LOPI2=+00100",
+      "Command_old": "VXX:LOPI2=+00100"
+    }
+  }
+}
